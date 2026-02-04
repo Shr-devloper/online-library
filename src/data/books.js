@@ -117,7 +117,7 @@ const books = [
     author: "Ray Bradbury",
     category: "fiction",
     description: "A dystopian novel about censorship and knowledge.",
-    rating: 4.5,
+    rating: 4.4,
   },
 ];
 
