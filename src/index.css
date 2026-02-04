@@ -145,3 +145,78 @@ button:hover {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   }
 }
+
+
+/* BOOK DETAILS PAGE */
+.details-container {
+  max-width: 1400px;
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.book-cover {
+  height: 420px;
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+  color: white;
+  font-size: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+}
+
+.details-right h1 {
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+.author {
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.meta {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.description {
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.info-list,
+.highlights {
+  margin: 15px 0 25px 20px;
+}
+
+.highlights li {
+  margin-bottom: 6px;
+}
+
+.back-btn {
+  display: inline-block;
+  margin-top: 20px;
+  color: #2563eb;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.back-btn:hover {
+  text-decoration: underline;
+}
+
+/* RESPONSIVE DETAILS */
+@media (max-width: 900px) {
+  .details-container {
+    grid-template-columns: 1fr;
+  }
+
+  .book-cover {
+    height: 280px;
+  }
+}
