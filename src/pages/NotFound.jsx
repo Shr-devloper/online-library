@@ -7,7 +7,7 @@ function NotFound() {
     <div style={{ padding: "20px" }}>
       <h2>404 Page Not Found</h2>
       <p>Invalid URL: {location.pathname}</p>
-      <Link to="/">Go Home</Link>
+      <Link to="/">Go  to Home</Link>
     </div>
   );
 }
