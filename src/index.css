@@ -1,0 +1,147 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #f4f6f8;
+  color: #333;
+
+}
+
+/* APP WRAPPER */
+.app-container {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  flex-wrap: wrap;
+}
+
+/* NAVBAR */
+nav {
+  width: 100%;
+  background: #1f2937;
+  padding: 15px 40px;
+  display: flex;
+  gap: 25px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* PAGE (FULL WIDTH) */
+.page {
+  width: 100%;
+  padding: 30px 40px;
+}
+
+/* CONSTRAIN TEXT (OPTIONAL) */
+.page h1,
+.page h2,
+.page h3,
+.page p,
+.page form {
+  max-width: 1200px;
+}
+
+/* BOOK GRID — MAIN FIX */
+.book-grid {
+  width: 100%;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 25px;
+  margin-top: 25px;
+}
+
+/* BOOK CARD */
+.book-card {
+  background: white;
+  padding: 18px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.book-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+}
+
+.book-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.book-card p {
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.book-card a {
+  display: inline-block;
+  margin-top: 8px;
+  color: #2563eb;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.book-card a:hover {
+  text-decoration: underline;
+}
+
+/* FORM */
+form {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  max-width: 700px;
+}
+
+/* INPUTS */
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* BUTTON */
+button {
+  padding: 10px 22px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .page {
+    padding: 20px;
+  }
+
+  nav {
+    padding: 15px 20px;
+  }
+
+  .book-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
